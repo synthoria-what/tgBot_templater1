@@ -1,6 +1,6 @@
-import os
+import subprocess
 import sys
-import subproccess
+import os
 
 
 def generate_alembic():
