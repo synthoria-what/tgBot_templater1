@@ -1,6 +1,6 @@
-from models.user import User
+from db.models.user import User
 from sqlalchemy import select, insert, update, delete, or_, and_
-from ..core import AsyncSessionLocal
+from db.core import AsyncSessionLocal
 
 class SQLManager:
     def __init__(self, session_factory=AsyncSessionLocal):

@@ -1,0 +1,10 @@
+aiogram
+sqlalchemy
+pydantic-settings
+httpx
+alembic
+{% if cookiecutter.db_type == "sqlite" %}
+aiosqlite
+{% else %}
+asyncpg
+{% endif %}
