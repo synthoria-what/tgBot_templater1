@@ -6,3 +6,7 @@ class Settings(BaseSettings):
     bot_token: str
     bot_name: str
     db_url: str
+    {% if cookiecutter.payment_service == "Yookassa" %}
+    yookassa_shop_id: str
+    yookassa_secret_key: str
+    {% endif %}

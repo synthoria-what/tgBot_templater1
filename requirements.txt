@@ -8,3 +8,7 @@ aiosqlite
 {% else %}
 asyncpg
 {% endif %}
+
+{% if cookiecutter.payment_services == "Yookassa" %}
+yookassa
+{% endif %}

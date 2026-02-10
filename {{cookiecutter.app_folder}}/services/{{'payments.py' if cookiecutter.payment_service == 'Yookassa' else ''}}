@@ -1,0 +1,5 @@
+from yookassa import Configuration
+from config import Settings
+
+Configuration.account_id = Settings().yookassa_shop_id
+Configuration.secret_key = Settings().yookassa_secret_key
